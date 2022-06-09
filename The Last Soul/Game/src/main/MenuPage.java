@@ -23,7 +23,7 @@ public class MenuPage extends JFrame implements ActionListener{
 		this.setIconImage(gameIcon.getImage());
 		
 		this.setTitle("The Last Soul");
-		this.setSize(800, 600);
+		this.setSize(960, 640);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);

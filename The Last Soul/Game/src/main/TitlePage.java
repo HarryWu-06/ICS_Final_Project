@@ -19,7 +19,7 @@ public class TitlePage extends JFrame implements ActionListener{
 		this.setIconImage(gameIcon.getImage());
 		
 		this.setTitle("The Last Soul");
-		this.setSize(800, 600);	
+		this.setSize(960, 640);	
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		this.setLayout(null);
@@ -43,7 +43,7 @@ public class TitlePage extends JFrame implements ActionListener{
 		titleL = new JLabel("The Last Soul");
 		titleL.setFont(new Font("MV Boli", Font.BOLD, 95));
 		titleL.setBounds(50, 70, 700, 100);
-		authorL = new JLabel("- Harry Wu & Huda xxx");
+		authorL = new JLabel("- Harry Wu & Huda Huda Hameed");
 		authorL.setFont(new Font("MV Boli", Font.BOLD, 30));
 		authorL.setBounds(80, 150, 700, 100);
 		
@@ -62,8 +62,7 @@ public class TitlePage extends JFrame implements ActionListener{
 			this.dispose();
 		}
 		else if(e.getSource() == settingB) {
-			new TitlePage(); 
-			this.dispose();
+			new SettingPage(); 
 		}
 		else if(e.getSource() == exitB) { 
 			System.exit(0);

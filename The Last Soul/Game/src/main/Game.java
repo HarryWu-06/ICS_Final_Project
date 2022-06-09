@@ -25,7 +25,7 @@ public class Game implements Runnable{
 	private void startGameLoop() {
 		gameThread = new Thread(this);
 		gameThread.start();
-	}
+	} 
 	
 	/**
 	 * Same as startGameLoop(), this is the game loop cited from YouTube

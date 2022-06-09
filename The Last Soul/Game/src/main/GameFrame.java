@@ -10,12 +10,11 @@ public class GameFrame extends JFrame{
 		this.setIconImage(gameIcon.getImage());
 		
 		this.setTitle("The Last Soul");
-		this.setSize(800, 600);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLocationRelativeTo(null);
-		this.setResizable(false);
 		this.add(gamePanel);
-		
+		this.pack();
+		this.setResizable(false);
+		this.setLocationRelativeTo(null);
 		
 		this.setVisible(true);
 	}
