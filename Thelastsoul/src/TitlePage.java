@@ -61,7 +61,6 @@ public class TitlePage extends JFrame implements ActionListener{
 		}
 		else if(e.getSource() == settingB) {
 			new SettingPage();
-			this.dispose();
 		}
 		else if(e.getSource() == exitB) { 
 			System.exit(0);
