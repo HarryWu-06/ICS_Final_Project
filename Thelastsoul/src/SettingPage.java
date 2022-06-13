@@ -21,18 +21,18 @@ public class SettingPage extends JFrame implements ActionListener{
 	JButton skinB, gametime, bgmusic, back, game;
 	JLabel titleS;
 	JLabel authorS;
+	JPanel panel;
+	JFrame frame;
 	
 	Color green = new Color(43, 220, 20);
 	
 	public SettingPage() {
-		JFrame frame = new JFrame("Settings!");
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		gameIcon = new ImageIcon("images\\gameIcon.png");
 		this.setIconImage(gameIcon.getImage());
 		
 		this.setTitle("The Last Soul");
 		this.setSize(960, 640);	
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		this.setLayout(null);
 		this.setResizable(false);
@@ -90,7 +90,6 @@ public class SettingPage extends JFrame implements ActionListener{
 		this.add(game);
 		this.setVisible(true);
 		this.getContentPane().setBackground(Color.pink);
-		
 	}
 	
 	public void actionPerformed(ActionEvent e) {
